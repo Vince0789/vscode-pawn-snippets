@@ -1,0 +1,40 @@
+{
+	"if": {
+		"prefix": "if",
+		"body": "if(${condition})\n{\n\t$0\n}"
+	},
+	"else": {
+		"prefix": "else",
+		"body": "else\n{\n\t$0\n}"
+	},
+	"enum": {
+		"prefix": "enum",
+		"body": "enum ${name:}\n{\n\t$0\n}"
+	},
+	"ife": {
+		"prefix": "if else",
+		"body": "if(${condition})\n{\n\t$0\n}\nelse\n{\n\t \n}"
+	},
+	"switch": {
+		"prefix": "switch",
+		"body": "switch(${var})\n{\n\tcase ${case}:\n\t{\n\t\t$0\n\t}\n}"
+	},
+	"for": {
+		"prefix": "for",
+		"body": "for(${initializer}; ${condition}; ${increment})\n{\n\t$0\n}"
+	},
+	"while": {
+		"prefix": "while",
+		"body": "while(${condition})\n{\n\t$0\n}"
+	},
+	"Insert doc block": {
+		"prefix": "docblock",
+		"body": [
+			"/**",
+			" * <summary>",
+			" *\t$0",
+			" * </summary>",
+			" */"
+		]
+	}
+}
